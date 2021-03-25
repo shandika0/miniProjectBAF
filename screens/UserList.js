@@ -47,6 +47,8 @@ export default function UserList(props) {
                     email: item.email,
                     phone: item.phone,
                     website: item.website,
+                    address: item.address,
+                    company: item.company
                   })
                 }
               >
@@ -60,7 +62,7 @@ export default function UserList(props) {
                       source={{ uri: "https://robohash.org/" + item.id }}
                       style={{
                         width: 100,
-                        height: 80,
+                        height: 90,
                         marginRight: 5,
                       }}
                     />
@@ -69,7 +71,7 @@ export default function UserList(props) {
                         style={{
                           color: "#fff",
                           fontWeight: "bold",
-                          fontSize: 23,
+                          fontSize: 18,
                         }}
                       >
                         Username : {item.username}
